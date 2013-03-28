@@ -2,7 +2,7 @@
 	1. Use the command 'npm install' to install the usergrid node module,
 	   require it below!	*/
 
-var Usergrid = require("usergrid");
+    var Usergrid = require("usergrid");
 
 /*
     2. Set your account details in the app
@@ -11,10 +11,10 @@ var Usergrid = require("usergrid");
     - Keep the appName as “sandbox”: it’s a context we automatically created for you. 
       It’s completely open by default, but don’t worry, other apps you create are not!      */
 
-var client = new Usergrid.client({
-    orgName:'',
-    appName:'sandbox',
-});
+    var client = new Usergrid.client({
+        orgName:'YOUR APIGEE.COM USERNAME',
+        appName:'sandbox',
+    });
 
 /*
     3. Set some details for your first object
@@ -25,25 +25,25 @@ var client = new Usergrid.client({
     - Keep the type as “book”.
     - Enter the title of your favorite book below, instead of “the old man and the sea”.    */
 
-var options = {
-	type:"book",
-	name:""
-};
+    var options = {
+    	type:"book",
+    	name:"the old man and the sea"
+    };
 
 /*
     4. Now, run it!
     
     You’re good to go! Use the command 'node index.js' to run the script.	*/
 
-client.createEntity(options, function(error, response){
-	if(error) {
-		console.log("Could not create the book. Did you enter your orgName (username) correctly on line 18 of index.js?");
-	} else {
-		console.log("Success! Here is the object we stored; ");
-		console.log("notice the timestamps and unique id we created for you:");
-		console.log(response.get());
-	}
-});
+    client.createEntity(options, function(error, response){
+    	if(error) {
+    		console.log("Could not create the book. Did you enter your orgName (username) correctly on line 15 of index.js?");
+    	} else {
+    		console.log("Success! Here is the object we stored; ");
+    		console.log("notice the timestamps and unique id we created for you:");
+    		console.log(response.get());
+    	}
+    });
 
 
 /*

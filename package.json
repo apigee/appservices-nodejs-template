@@ -1,0 +1,21 @@
+{
+  "name": "App_Services_Sample",
+  "version": "0.0.1",
+  "description": "A sample showing off the Node.js module for App Services.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "dependencies":{
+    "usergrid":"0.10.4"
+  },
+  "repository": "",
+  "keywords": [
+    "Apigee",
+    "App",
+    "Services",
+    "UserGrid"
+  ],
+  "author": "Matt Dobson",
+  "license": "BSD"
+}

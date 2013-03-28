@@ -12,7 +12,7 @@ var Usergrid = require("usergrid");
       It’s completely open by default, but don’t worry, other apps you create are not!      */
 
 var client = new Usergrid.client({
-    orgName:'mdobs',
+    orgName:'',
     appName:'sandbox',
 });
 
